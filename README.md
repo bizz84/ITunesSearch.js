@@ -8,7 +8,10 @@ It uses the ITunes search API to read apps data from the iOS App Store.
 
 ## Usage
 
-To test out this client, follow these instructions (tested on Mac OS X):
+To run this client as-is, open a web browser at [this address](http://www.musevisions.com/lookup/search.html).
+
+
+To install and run this client on your machine, follow these instructions (tested on Mac OS X):
 <pre>
 git clone https://github.com/bizz84/ITunesSearch.js
 cd ITunesSearch.js
