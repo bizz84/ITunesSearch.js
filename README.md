@@ -2,9 +2,9 @@
 Javascript client for App Store Lookup based on iTunes Search API
 
 ## Overview
-This is a simple Javascript client I wrote with Javascript and React.js. 
+This is a simple Javascript client I wrote with Javascript and [React.js](http://facebook.github.io/react/). 
 
-It uses the ITunes search API to read apps data from the iOS App Store.
+It uses the [ITunes Search API](https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html) to read apps data from the iOS App Store.
 
 ## Usage
 
