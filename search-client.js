@@ -1,3 +1,9 @@
+// http://stackoverflow.com/questions/2919337/jquery-convert-line-breaks-to-br-nl2br-equivalent
+function nl2br (str, is_xhtml) {
+  var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br />' : '<br>';
+  return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1'+ breakTag +'$2');
+}
+
 function parseITunesJSON(json) {
 
   if (json.results.length == 0) {
@@ -7,7 +13,7 @@ function parseITunesJSON(json) {
   console.log(result);
 
   $('#loadImage')[0].src             = result["artworkUrl100"]
-  $('#app-description')[0].innerHTML = result["description"]
+  $('#app-description')[0].innerHTML = nl2br(result["description"])
   $('#app-title')[0].innerHTML       = result["trackName"]
   $('#app-author')[0].innerHTML      = result["artistName"]
 }

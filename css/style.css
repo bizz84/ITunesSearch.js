@@ -12,7 +12,6 @@ form {
   margin: 17% auto;
 }
 
-
 .header {
   font-size: 35px;
   text-transform: uppercase;
@@ -27,6 +26,9 @@ form {
   margin: -2px 0 45px;
 }
 
+#app-description {
+  text-align: left;
+}
 
 .input {
   display: flex;
